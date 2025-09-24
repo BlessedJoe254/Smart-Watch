@@ -74,7 +74,7 @@ void loop() {
   display.setTextSize(2);
   display.getTextBounds(timeStr, 0, 0, &x1, &y1, &w, &h);
   int xTime = (SCREEN_WIDTH - w) / 2;
-  int yTime = 10; // slightly lower than before
+  int yTime = 10; 
   display.setCursor(xTime, yTime);
   display.println(timeStr);
 
@@ -93,7 +93,7 @@ void loop() {
                    String(now.month()) + "/" +
                    String(shortYear);
 
-  display.setTextSize(1); // smaller font
+  display.setTextSize(1); 
   display.getTextBounds(dateStr, 0, 0, &x1, &y1, &w, &h);
   int xDate = (SCREEN_WIDTH - w) / 2;
   int yDate = yTime + 16; // slightly closer to time but not overlapping
